@@ -1,0 +1,8 @@
+---
+applications:
+- name: proxy-srv-2
+  random-route: true
+  path: .
+  memory: 756M
+  buildpacks:
+  - nodejs_buildpack
