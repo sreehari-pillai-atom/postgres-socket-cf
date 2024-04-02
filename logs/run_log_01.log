@@ -1,0 +1,102 @@
+
+
+   2024-04-02T07:46:06.10+0000 [API/19] OUT Restarted app with guid 774c1cdb-501f-48a9-9d57-0bc6ebc68a1e
+   2024-04-02T07:46:06.19+0000 [CELL/0] OUT Cell 50408de6-5c36-429c-8474-5ed79eb7aee6 creating container for instance cb5e8030-916a-44e1-671d-0651
+   2024-04-02T07:46:06.70+0000 [CELL/0] OUT Security group rules were updated
+   2024-04-02T07:46:06.72+0000 [CELL/0] OUT Cell 50408de6-5c36-429c-8474-5ed79eb7aee6 successfully created container for instance cb5e8030-916a-44e1-671d-0651
+   2024-04-02T07:46:06.96+0000 [CELL/0] OUT Downloading droplet...
+   2024-04-02T07:46:09.56+0000 [CELL/0] OUT Downloaded droplet (47.7M)
+   2024-04-02T07:46:09.56+0000 [CELL/0] OUT Starting health monitoring of container
+   2024-04-02T07:46:09.65+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2024-04-02T07:46:09.84+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2024-04-02T07:46:10.26+0000 [APP/PROC/WEB/0] OUT > proxy-srv@1.0.0 start
+   2024-04-02T07:46:10.26+0000 [APP/PROC/WEB/0] OUT > node server.js
+   2024-04-02T07:46:10.36+0000 [APP/PROC/WEB/0] OUT Socket connected
+   2024-04-02T07:46:10.36+0000 [APP/PROC/WEB/0] OUT Renewing the new connectivity access token
+   2024-04-02T07:46:10.36+0000 [APP/PROC/WEB/0] OUT Socket ready
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT location length 0
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT connection {
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT proxy: {
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT host: 'connectivityproxy.internal.cf.eu10-004.hana.ondemand.com',
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT port: 20004,
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT type: 5,
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT custom_auth_method: 128,
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT custom_auth_request_handler: [AsyncFunction: custom_auth_request_handler],
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT custom_auth_response_size: 2,
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT custom_auth_response_handler: [AsyncFunction: custom_auth_response_handler]
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT },
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT command: 'connect',
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT destination: { host: 'aws-rds-dev', port: 5432 }
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT }
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT Socket connected
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT SUCCESS: SOCKS5 authentication complete.
+   2024-04-02T07:46:10.58+0000 [APP/PROC/WEB/0] OUT custom_auth_response_handler returning 'true'
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT timeout call 5
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT Socket error:  Error: getaddrinfo ENOTFOUND aws-rds-dev
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT errno: -3008,
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT code: 'ENOTFOUND',
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT syscall: 'getaddrinfo',
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT hostname: 'aws-rds-dev'
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT }
+
+   #Major Worry 
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT Error Occured while connection- getaddrinfo ENOTFOUND aws-rds-dev
+
+
+   2024-04-02T07:46:15.36+0000 [APP/PROC/WEB/0] OUT Connection closed, reconnecting...
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT Socket connected
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT location length 0
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT Socket ready
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT connection {
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT proxy: {
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT host: 'connectivityproxy.internal.cf.eu10-004.hana.ondemand.com',
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT port: 20004,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT type: 5,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT custom_auth_method: 128,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT custom_auth_request_handler: [AsyncFunction: custom_auth_request_handler],
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT custom_auth_response_size: 2,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT custom_auth_response_handler: [AsyncFunction: custom_auth_response_handler]
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT },
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT command: 'connect',
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT destination: { host: 'aws-rds-dev', port: 5432 }
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT }
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT Socket connected
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT Socket ended by BTP
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] OUT Connection closed, reconnecting...
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR node:events:495
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR throw er; // Unhandled 'error' event
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR ^
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR SocksClientError: Socket closed
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at SocksClient.closeSocket (/home/vcap/app/node_modules/socks/build/client/socksclient.js:390:32)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at SocksClient.onCloseHandler (/home/vcap/app/node_modules/socks/build/client/socksclient.js:356:14)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at Socket.onClose (/home/vcap/app/node_modules/socks/build/client/socksclient.js:224:35)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at Object.onceWrapper (node:events:632:26)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at Socket.emit (node:events:529:35)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at TCP.<anonymous> (node:net:350:12)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR Emitted 'error' event on SocksClient instance at:
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at SocksClient.closeSocket (/home/vcap/app/node_modules/socks/build/client/socksclient.js:390:18)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at SocksClient.onCloseHandler (/home/vcap/app/node_modules/socks/build/client/socksclient.js:356:14)
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR [... lines matching original stack trace ...]
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR at TCP.<anonymous> (node:net:350:12) {
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR options: {
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR proxy: {
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR host: 'connectivityproxy.internal.cf.eu10-004.hana.ondemand.com',
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR port: 20004,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR type: 5,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR custom_auth_method: 128,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR custom_auth_request_handler: [AsyncFunction: custom_auth_request_handler],
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR custom_auth_response_size: 2,
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR custom_auth_response_handler: [AsyncFunction: custom_auth_response_handler]
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR },
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR command: 'connect',
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR destination: { host: 'aws-rds-dev', port: 5432 }
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR }
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR }
+   2024-04-02T07:46:15.37+0000 [APP/PROC/WEB/0] ERR Node.js v18.19.0
+   2024-04-02T07:46:15.38+0000 [APP/PROC/WEB/0] ERR npm notice
+   2024-04-02T07:46:15.38+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 10.2.3 -> 10.5.0
+   2024-04-02T07:46:15.38+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.5.0>
+   2024-04-02T07:46:15.38+0000 [APP/PROC/WEB/0] ERR npm notice Run `npm install -g npm@10.5.0` to update!
+   2024-04-02T07:46:15.38+0000 [APP/PROC/WEB/0] ERR npm notice
+   2024-04-02T07:46:15.40+0000 [APP/PROC/WEB/0] OUT Exit status 1
